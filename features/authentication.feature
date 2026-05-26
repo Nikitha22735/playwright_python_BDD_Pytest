@@ -1,9 +1,10 @@
 Feature: Authentication
 
- Background: navigation to the amazon page
+ Background: 
     Given user is on login page
 
 
+  @login_validation
   Scenario: Valdiate Login Page   
     When User hover on Accounts Btn
     Then SignIn button should get displayed
